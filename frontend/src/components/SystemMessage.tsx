@@ -26,8 +26,8 @@ function PoweredBy({ poweredby }) {
 }
 
 function SystemMesage({ children, title, onConfirm, poweredBy }: any) {
-  const avatar = "/sageledger2.jpeg";
-  const displayName = "SageLedger";
+  const avatar = "/defibliss2.jpeg";
+  const displayName = "defibliss";
 
   return (
     <MessageContainer name={displayName} avatar={avatar}>

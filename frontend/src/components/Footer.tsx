@@ -13,10 +13,10 @@ export function Footer() {
         <span className="text-sm text-gray-500 text-center">
           © 2024{" "}
           <Link
-            href="https://sageledger.vercel.app/"
+            href="https://defibliss.vercel.app/"
             className="hover:underline"
           >
-            SageLedger
+            defibliss
           </Link>
           . All Rights Reserved.
         </span>

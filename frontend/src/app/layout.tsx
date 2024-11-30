@@ -30,8 +30,8 @@ const kumbhsans = Kumbh_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "SageLedger",
-  description: "SageLedger",
+  title: "defibliss",
+  description: "defibliss",
 };
 
 export default async function RootLayout({

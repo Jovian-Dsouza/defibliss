@@ -19,7 +19,7 @@ function EmptyChat() {
       <div className="font-semibold max-w-md text-xl text-left pt-8 px-2">
         Hello! I am{" "}
         <span className="bg-clip-text text-transparent bg-gradient-to-br from-teal-400 via-cyan-400 to-blue-500">
-          SageLedger
+          defibliss
         </span>{" "}
         but you can call me Sage ;)
       </div>
@@ -86,9 +86,9 @@ export function MessageRouter({ message, index }) {
             key={index}
             message={{ role: "assistant", content: messageJson.message }}
             userName="User"
-            aiName="SageLedger"
+            aiName="defibliss"
             userAvatar="/user_logo3.png"
-            aiAvatar="/sageledger2.jpeg"
+            aiAvatar="/defibliss2.jpeg"
           />
         );
       }
@@ -99,9 +99,9 @@ export function MessageRouter({ message, index }) {
             key={index}
             message={{ role: "assistant", content: messageJson.answer }}
             userName="User"
-            aiName="SageLedger"
+            aiName="defibliss"
             userAvatar="/user_logo3.png"
-            aiAvatar="/sageledger2.jpeg"
+            aiAvatar="/defibliss2.jpeg"
           />
         );
       }
@@ -118,9 +118,9 @@ export function MessageRouter({ message, index }) {
         key={index}
         message={{role: "assistant", content: "Sorry, I encountered an error processing this message. Please try again."} }
         userName="User"
-        aiName="SageLedger"
+        aiName="defibliss"
         userAvatar="/user_logo3.png"
-        aiAvatar="/sageledger2.jpeg"
+        aiAvatar="/defibliss2.jpeg"
       />
     );
   }
@@ -132,9 +132,9 @@ export function MessageRouter({ message, index }) {
       key={index}
       message={message}
       userName="User"
-      aiName="SageLedger"
+      aiName="defibliss"
       userAvatar="/user_logo3.png"
-      aiAvatar="/sageledger2.jpeg"
+      aiAvatar="/defibliss2.jpeg"
     />
   );
 }
