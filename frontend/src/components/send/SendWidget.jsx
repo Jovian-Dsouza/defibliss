@@ -92,7 +92,7 @@ export function SendWidget({ fromToken, toAddress, amountIn }) {
                 rel="noopener noreferrer"
                 className="text-sm text-green-600 hover:text-green-800 underline mt-2 block"
               >
-                View on SOON explorer
+                View on explorer
               </a>
             )}
           </div>}

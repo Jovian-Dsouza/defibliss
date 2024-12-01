@@ -11,7 +11,9 @@ import BrianAsk from "@/components/Brian/BrianAsk";
 import { LimitWidget } from "./jupiter/LimitWidget";
 import { PriceWidget } from "./jupiter/PriceWidget";
 import { SendWidget } from "@/components/send/SendWidget"
+import { SendCrossChainWidget } from "@/components/send/SendCrossChainWidget"
 import { GetPortfolioWidget } from "./GetPortfolio";
+import { QuoteParams } from "@/utilities/routerNitro";
 
 function EmptyChat() {
   return (
@@ -40,11 +42,16 @@ export function MessageRouter({ message, index }) {
       console.log("Message content", messageJson);
 
       if (messageJson.action === "send") {
+        const quoteParams: QuoteParams = {
+          fromTokenAddress: messageJson.tokenFrom,
+          toTokenAddress: messageJson.toAddress,
+          amount: messageJson.amountIn,
+          fromTokenChainId: 1,
+          toTokenChainId: 1,
+        }
         return (
-          <SendWidget
-            fromToken={messageJson.tokenFrom}
-            toAddress={messageJson.toAddress}
-            amountIn={messageJson.amountIn}
+          <SendCrossChainWidget
+            {...quoteParams}
           />
         );
       }

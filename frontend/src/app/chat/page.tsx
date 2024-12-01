@@ -6,6 +6,7 @@ import { useChat } from "@/hooks/useChat";
 import { useRecoilState } from "recoil";
 import { messagesAtom } from "@/store/atoms/chatAtoms";
 import { getMessageObject, filterRelevantMessages, checkLastMessageFromUser} from "@/utilities/messageUtils";
+import { testSend, testSendCrossChain } from "@/data/testMessages";
 
 export default function ChatPage() {
   const [messages, setMessages] = useRecoilState(messagesAtom);
@@ -17,6 +18,10 @@ export default function ChatPage() {
       getMessageObject(input, isSystemMessage),
     ]);
   }
+
+  useEffect(() => {
+    setMessages([testSendCrossChain])
+  }, [])
 
   const chatRef = useRef(null);
   useEffect(() => {

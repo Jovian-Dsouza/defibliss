@@ -24,3 +24,8 @@ export const testSend = {
   content:
     '{"action": "send", "tokenFrom": "sol", "toAddress": "9xbfpUgTWYertUT3YHZazAdS1ABLJAouqsh6uc8Vc5Sn", "amountIn": "0.001"}',
 };
+export const testSendCrossChain = {
+  role: "assistant",
+  content:
+    '{"action": "send", "tokenFrom": "sol", "toAddress": "9xbfpUgTWYertUT3YHZazAdS1ABLJAouqsh6uc8Vc5Sn", "amountIn": "0.001"}',
+};
